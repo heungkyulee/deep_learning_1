@@ -1,0 +1,173 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/version info into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PEP 582; __pypackages__
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rove concepts folder
+.spyderworkspace
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.pydevproject
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Trained models and datasets (if large and not meant to be versioned)
+# Adjust these paths based on your project structure
+# For example, if you don't want to commit the entire 'datasets' or 'saved_models' folder
+datasets/stanford_dogs_cropped/train_cropped_augmented/
+datasets/stanford_dogs_cropped/train_cropped/ 
+datasets/stanford_dogs_cropped/test_cropped/
+saved_models/
+# analysis_results/
+
+# Specific large files or directories you want to ignore
+# For example, if your dataset source files are very large:
+# C:\Users\Lee\Downloads\archive\ # Or a relative path if it's within the project
+
+# Log files
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.swp
+*~
+*.tmp
+
+# ProtoViT specific (adjust if necessary)
+# If you decide not to commit the augmented data or all saved models:
+datasets/stanford_dogs_cropped/train_cropped_augmented/
+# saved_models/* # Uncomment if you want to ignore all saved models
+# analysis_results/* # Uncomment if you want to ignore all analysis results
+
+# Checkpoints generated during training (if any, not explicitly saved by save.py)
+# checkpoints/
+
+# Any other large binary files
+*.pth # Be careful with this if you intend to share some specific checkpoints via Git LFS
+      # If you want to ignore ALL .pth files except those in a specific 'model_zoo' directory:
+# *.pth
+# !model_zoo/*.pth

@@ -1,20 +1,21 @@
-base_architecture = 'deit_small_patch16_224'
+base_architecture = 'deit_tiny_patch16_224'
+
 radius = 1 # unit of patches 
 img_size = 224
 if base_architecture == 'deit_small_patch16_224':
-    prototype_shape = (2000, 384, 4)
+    prototype_shape = (1200, 384, 4)
 elif base_architecture == 'deit_tiny_patch16_224':
-    prototype_shape = (2000, 192, 4)
+    prototype_shape = (1200, 192, 4)
 elif base_architecture == 'cait_xxs24_224':
-    prototype_shape = (2000, 192, 4)
+    prototype_shape = (1200, 192, 4)
 
 dropout_rate = 0.0
-num_classes = 200
+num_classes = 120
 prototype_activation_function = 'log'
 add_on_layers_type = 'regular'
-experiment_run = 'exp1'
+experiment_run = 'sdogs_deit_tiny_exp1' # 실험 이름 변경
 
-data_path =  "./cub200_cropped/"
+data_path =  "./datasets/stanford_dogs_cropped/"
 train_dir = data_path + 'train_cropped_augmented/'
 test_dir = data_path + 'test_cropped/'
 train_push_dir = data_path + 'train_cropped/'

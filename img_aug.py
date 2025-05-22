@@ -7,7 +7,7 @@ def makedir(path):
     if not os.path.exists(path):
         os.makedirs(path)
 
-datasets_root_dir = './datasets/cub200_cropped/'
+datasets_root_dir = './datasets/stanford_dogs_cropped/'
 dir = datasets_root_dir + 'train_cropped/'
 target_dir = datasets_root_dir + 'train_cropped_augmented/'
 
